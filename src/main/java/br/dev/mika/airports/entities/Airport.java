@@ -6,6 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Column;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -15,127 +16,127 @@ import jakarta.persistence.Column;
  *
  * @author ppjatb
  */
-    @Entity
+@Entity
 @Table(name = "airport")
 public class Airport {
- @Id
- @GeneratedValue(strategy = GenerationType.IDENTITY)
- private long id;
- private String name;
- private String city;
- private String country;
 
- @Column(name = "iatacode")
- private String iataCode;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    private String name;
+    private String city;
+    private String country;
 
- @Column(name = "icaocode")
- private String icaoCode;
+    @Column(name = "iatacode")
+    private String iataCode;
 
- private double latitude;
- private double longitude;
- private double altitude;
+    @Column(name = "icaocode")
+    private String icaoCode;
 
- @Column(name = "offsetutc")
- private double offsetFromUTC;
+    private double latitude;
+    private double longitude;
+    private double altitude;
 
- @Column(name = "dstcode")
- private String dstCode;
+    @Column(name = "offsetutc")
+    private double offsetFromUTC;
 
-        public long getId() {
-            return id;
-        }
+    @Column(name = "dstcode")
+    private String dstCode;
 
-        public void setId(long id) {
-            this.id = id;
-        }
+    public long getId() {
+        return id;
+    }
 
-        public String getName() {
-            return name;
-        }
+    public void setId(long id) {
+        this.id = id;
+    }
 
-        public void setName(String name) {
-            this.name = name;
-        }
+    public String getName() {
+        return name;
+    }
 
-        public String getCity() {
-            return city;
-        }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-        public void setCity(String city) {
-            this.city = city;
-        }
+    public String getCity() {
+        return city;
+    }
 
-        public String getCountry() {
-            return country;
-        }
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-        public void setCountry(String country) {
-            this.country = country;
-        }
+    public String getCountry() {
+        return country;
+    }
 
-        public String getIataCode() {
-            return iataCode;
-        }
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
-        public void setIataCode(String iataCode) {
-            this.iataCode = iataCode;
-        }
+    public String getIataCode() {
+        return iataCode;
+    }
 
-        public String getIcaoCode() {
-            return icaoCode;
-        }
+    public void setIataCode(String iataCode) {
+        this.iataCode = iataCode;
+    }
 
-        public void setIcaoCode(String icaoCode) {
-            this.icaoCode = icaoCode;
-        }
+    public String getIcaoCode() {
+        return icaoCode;
+    }
 
-        public double getLatitude() {
-            return latitude;
-        }
+    public void setIcaoCode(String icaoCode) {
+        this.icaoCode = icaoCode;
+    }
 
-        public void setLatitude(double latitude) {
-            this.latitude = latitude;
-        }
+    public double getLatitude() {
+        return latitude;
+    }
 
-        public double getLongitude() {
-            return longitude;
-        }
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
 
-        public void setLongitude(double longitude) {
-            this.longitude = longitude;
-        }
+    public double getLongitude() {
+        return longitude;
+    }
 
-        public double getAltitude() {
-            return altitude;
-        }
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
 
-        public void setAltitude(double altitude) {
-            this.altitude = altitude;
-        }
+    public double getAltitude() {
+        return altitude;
+    }
 
-        public double getOffsetFromUTC() {
-            return offsetFromUTC;
-        }
+    public void setAltitude(double altitude) {
+        this.altitude = altitude;
+    }
 
-        public void setOffsetFromUTC(double offsetFromUTC) {
-            this.offsetFromUTC = offsetFromUTC;
-        }
+    public double getOffsetFromUTC() {
+        return offsetFromUTC;
+    }
 
-        public String getDstCode() {
-            return dstCode;
-        }
+    public void setOffsetFromUTC(double offsetFromUTC) {
+        this.offsetFromUTC = offsetFromUTC;
+    }
 
-        public void setDstCode(String dstCode) {
-            this.dstCode = dstCode;
-        }
+    public String getDstCode() {
+        return dstCode;
+    }
 
-        public String getTimezone() {
-            return timezone;
-        }
+    public void setDstCode(String dstCode) {
+        this.dstCode = dstCode;
+    }
 
-        public void setTimezone(String timezone) {
-            this.timezone = timezone;
-        }
- private String timezone;
- }
+    public String getTimezone() {
+        return timezone;
+    }
 
+    public void setTimezone(String timezone) {
+        this.timezone = timezone;
+    }
+    private String timezone;
+}
